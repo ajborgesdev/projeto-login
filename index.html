@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="media-query/style.css" />
   </head>
@@ -18,21 +19,31 @@
             poder fazer as configurações no seu ambiente.
           </p>
           <form action="login.php" method="get" autocomplete="on">
-            <input
-              type="email"
-              name="email"
-              id="iemail"
-              required
-              value="seu e-mail" />
-            <input
-              type="password"
-              name="senha"
-              id="isenha"
-              required
-              minlength="6"
-              maxlength="30" />
+            <div class="campo">
+              <i class="material-icons">person</i>
+              <input
+                type="email"
+                name="email"
+                id="ilogin"
+                required
+                maxlength="30"
+                placeholder="seu e-mail" autocomplete="email" />
+              <label for="ilogin">Login</label>
+            </div>
+            <div class="campo">
+              <i class="material-icons">vpn_key</i>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                required
+                placeholder="sua senha"
+                minlength="6"
+                maxlength="30" autocomplete="current-password" />
+              <label for="isenha">Senha</label>
+            </div>
             <input type="submit" value="Entrar" />
-            <input type="submit" value="Esqueci a senha" />
+            <a href="esqueci.html">Esqueci a senha <i class="material-icons">mail</i></a>
           </form>
         </div>
       </section>
