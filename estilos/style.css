@@ -46,6 +46,8 @@ main {
   top: 50%;
   overflow: hidden;
   width: 250px;
+  transition: width .3s, height .3s;
+  transition-timing-function: ease;
 }
 
 #login > #imagem {
