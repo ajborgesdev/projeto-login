@@ -11,12 +11,12 @@ Grandes telas: acima de 1200px
   --cor1: #5f2c82;
   --cor2: #49a09d;
 
-  background: linear-gradient(to bottom (--cor1), (--cor2));
+  background: linear-gradient(to bottom, var(--cor1), var(--cor2));
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body {
-    background-color: var(--cor1), var(--cor2);
+    background: linear-gradient(to bottom, var(--cor1), var(--cor2));
   }
 
   section#login {
@@ -36,6 +36,11 @@ Grandes telas: acima de 1200px
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+  body {
+    background: linear-gradient(to bottom, var(--cor1), var(--cor2));
+  }
+
   section#login {
     width: 950px;
   }
