@@ -39,7 +39,7 @@ main {
   background-color: white;
   border-radius: 20px;
   box-shadow: -1px -1px 15px 2px rgba(0, 0, 0, 0.281);
-  height: 500px;
+  height: 490px;
   position: relative;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -65,7 +65,7 @@ main {
 section > #formulario > h1 {
   text-align: center;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
   font-family: 'Renner';
   font-weight: 600;
 }
@@ -74,4 +74,71 @@ section > #formulario > p {
   font-size: 0.7em;
   font-family: 'Expressway';
   font-weight: 200;
+}
+
+form {
+  padding-top: 10px;
+}
+
+form > div.campo {
+  background-color: #5f2c82;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+div.campo > label {
+  display: none;
+}
+
+#ilogin {
+  background-color: #94cfcd;
+  border-color: #94cfcd;
+}
+
+#isenha {
+  background-color: #94cfcd;
+}
+
+form > input[type=submit] {
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 1em;
+  border: none;
+  background-color: #94cfcd;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+  background-color: #689898d3;
+}
+
+form > a.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 7px;
+  border: 1px solid #80b4b2;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.614);
+}
+
+form > a.botao:hover {
+  background-color: #64c8c5;
+}
+
+form > a.botao > i {
+  font-size: 0.8em;
 }
