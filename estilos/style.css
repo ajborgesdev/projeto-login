@@ -9,14 +9,10 @@ Lilás: #5f2c82
   font-weight: 300;
   src: url(../fontes/Renner.ttf) format('truetype');
 }
-@font-face {
-  font-family: 'Expressway';
-  font-weight: 200;
-  src: url(../fontes/Expressway.otf) format('opentype');
-}
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,12 +37,12 @@ main {
   box-shadow: -1px -1px 15px 2px rgba(0, 0, 0, 0.281);
   height: 490px;
   position: relative;
-  transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
   overflow: hidden;
   width: 250px;
-  transition: width .3s, height .3s;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
 }
 
@@ -71,20 +67,14 @@ section > #formulario > h1 {
 }
 
 section > #formulario > p {
-  font-size: 0.7em;
-  font-family: 'Expressway';
-  font-weight: 200;
-}
-
-form {
-  padding-top: 10px;
+  font-size: 12px;
 }
 
 form > div.campo {
   background-color: #5f2c82;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  padding: 5px;
+  display: block;
+  border-radius: 8px;
+  margin: 5px 0px;
   height: 40px;
   width: 100%;
 }
@@ -93,16 +83,25 @@ div.campo > label {
   display: none;
 }
 
-#ilogin {
+div.campo > input {
   background-color: #94cfcd;
   border-color: #94cfcd;
+  border-radius: 10px;
+  font-size: 1em;
+  height: 100%;
+  width: calc(100% - 45px);
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-12px);
 }
 
-#isenha {
-  background-color: #94cfcd;
+div.campo > input:focus-within {
+  background-color: white;
+  border: none;
 }
 
-form > input[type=submit] {
+form > input[type='submit'] {
   color: rgb(255, 255, 255);
   display: block;
   font-size: 1em;
@@ -114,7 +113,7 @@ form > input[type=submit] {
   cursor: pointer;
 }
 
-form > input[type=submit]:hover {
+form > input[type='submit']:hover {
   background-color: #689898d3;
 }
 
@@ -141,4 +140,11 @@ form > a.botao:hover {
 
 form > a.botao > i {
   font-size: 0.8em;
+}
+
+div.campo > i {
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
 }

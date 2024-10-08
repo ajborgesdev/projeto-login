@@ -18,19 +18,16 @@ Grandes telas: acima de 1200px
   font-family: 'Renner';
   src: url(../fontes/Renner.ttf) format('truetype');
 }
-@font-face {
-  font-family: 'Expressway';
-  font-weight: 200;
-  src: url(../fontes/Expressway.otf) format('opentype');
-}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  /* TABLET */
   body {
     background: linear-gradient(to bottom, var(--cor1), var(--cor2));
   }
 
   section#login {
     width: 90vw;
+    height: 280px;
   }
 
   section#login > div#imagem {
@@ -44,7 +41,7 @@ Grandes telas: acima de 1200px
     width: 65%;
   }
 
-  section > #formulario > h1 {
+  section#formulario > h1 {
     text-align: center;
     justify-content: center;
     padding: 10px;
@@ -52,21 +49,20 @@ Grandes telas: acima de 1200px
     font-weight: 600;
   }
 
-  section > #formulario > p {
+  section#formulario > p {
     font-size: 1em;
-    font-family: 'Expressway';
-    font-weight: 200;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+  /* DESKTOP */
   body {
     background: linear-gradient(to bottom, var(--cor1), var(--cor2));
   }
 
   section#login {
     width: 950px;
+    height: 350px;
   }
 
   section#login > div#imagem {
@@ -83,15 +79,14 @@ Grandes telas: acima de 1200px
   section > #formulario > h1 {
     text-align: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 0px 5px;
     font-family: 'Renner';
     font-size: 2em;
     font-weight: 600;
   }
 
   section > #formulario > p {
-    font-size: 1.2em;
-    font-family: 'Expressway';
-    font-weight: 200;
+    font-size: 1.1em;
+    margin-bottom: 10px;
   }
 }
