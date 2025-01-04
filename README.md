@@ -41,9 +41,9 @@ projeto/
 ├── /imagens             
 │   ├── imagem-projeto.png
 │   └── metal.jpg
-
-
+```
 ## Melhorias Futuras
+
 - Implementar validação de formulário com JavaScript.
 - Adicionar integração com backend para autenticação real.
 - Tornar o design responsivo para dispositivos móveis.
