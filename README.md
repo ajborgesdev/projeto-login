@@ -28,12 +28,20 @@ Este é um projeto de tela de login criado para fins de estudo e prática em des
 
 ## Estrutura do Projeto
 ```
-.
-├── index.html
-├── style.css
-├── /imagens
-│   └── image-projetologin.jpg
-```
+projeto/
+├── index.html          
+├── README.md           
+├── .gitattributes       
+├── /estilo             
+│   ├── style.css        
+│   └── media-query.css  
+├── /fontes              
+│   ├── Expressway.otf
+│   └── Renner.ttf
+├── /imagens             
+│   ├── imagem-projeto.png
+│   └── metal.jpg
+
 
 ## Melhorias Futuras
 - Implementar validação de formulário com JavaScript.
