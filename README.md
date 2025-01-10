@@ -46,7 +46,6 @@ projeto/
 
 - Implementar validação de formulário com JavaScript.
 - Adicionar integração com backend para autenticação real.
-- Tornar o design responsivo para dispositivos móveis.
 
 ## Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
