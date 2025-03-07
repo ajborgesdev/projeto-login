@@ -18,7 +18,7 @@ Este é um projeto de tela de login criado para fins de estudo e prática em des
 ## Como Usar
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/anabxrges/projeto-login.git
+   git clone https://github.com/ajborgesdev/projeto-login.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
@@ -28,19 +28,21 @@ Este é um projeto de tela de login criado para fins de estudo e prática em des
 
 ## Estrutura do Projeto
 ```
-projeto/
-├── index.html          
-├── README.md           
+projeto-login/
+├── estilo/        
+├── estilos/
+│   ├── style.css             
 ├── .gitattributes       
-├── /estilo             
-│   ├── style.css        
-│   └── media-query.css  
 ├── /fontes              
 │   ├── Expressway.otf
 │   └── Renner.ttf
 ├── /imagens             
 │   ├── imagem-projeto.png
 │   └── metal.jpg
+├── media-query/
+│   └── style.css
+├── index.html
+├── README.md      
 ```
 ## Melhorias Futuras
 
